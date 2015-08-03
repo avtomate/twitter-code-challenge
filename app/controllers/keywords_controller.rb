@@ -1,6 +1,6 @@
 class KeywordsController < ApplicationController
   def index
-    # @keywords = Keyword.all
+    @keywords = Keyword.all
     # @tweets = Tweet.all
   end
 

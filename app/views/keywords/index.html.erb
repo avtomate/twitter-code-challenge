@@ -1,0 +1,12 @@
+<h1> Initial test view! </h1>
+<h3>Keywords:</h3>
+<ul>
+<% @keywords.each do |keyword| %>
+  <li><%= keyword.content %></li>
+<% end %>
+</ul>
+
+<form action="/keywords/show" method="get" id="form">
+  Keyword: <input type="text" name="keyword"><br><br>
+  <input type="submit" value="Find Tweets" class="btn btn-lg btn-primary">
+</form>
