@@ -18,12 +18,11 @@ function findTweets(){
       data: $(this).serialize(),
       dataType: 'JSON'
     }).done(function(response){
-      // console.log('BEFORE TWEET')
-      // console.log(response.tweets[0].text)
-      // console.log('AFTER TWEET')
-      // $('#tweet-holder').append(response.tweets)
+      console.log(response)
       for(var i=0; i < response.tweets.length; i++) {
-        $('#tweet-holder').append((i+1) + ". " + response.tweets[i].text + "<br><br>")
+        var urlAnchor = "<a href=https://twitter.com/" + response.tweets[i].user.screen_name + "/status/" + response.tweets[i].id_str + ">"
+        console.log(urlAnchor)
+        $('#tweet-holder').append(urlAnchor + (i+1) + ". " + response.tweets[i].text + "</a><br><br>")
       }
     })
   })
