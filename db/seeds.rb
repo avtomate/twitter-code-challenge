@@ -6,5 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-keywords = %w[cats dogs corgis snapple]
+#initial keyword seed
+keywords = %w[cats dogs corgis snapple oprah iphone]
 keywords.length.times { |i| Keyword.create(content: keywords[i]) }
