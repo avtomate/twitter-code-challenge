@@ -18,8 +18,13 @@ function findTweets(){
       data: $(this).serialize(),
       dataType: 'JSON'
     }).done(function(response){
-      console.log('initial ajax is working')
-      console.log(response)
+      // console.log('BEFORE TWEET')
+      // console.log(response.tweets[0].text)
+      // console.log('AFTER TWEET')
+      // $('#tweet-holder').append(response.tweets)
+      for(var i=0; i < response.tweets.length; i++) {
+        $('#tweet-holder').append((i+1) + ". " + response.tweets[i].text + "<br><br>")
+      }
     })
   })
 }

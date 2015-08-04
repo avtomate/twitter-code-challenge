@@ -1913,3 +1913,1737 @@ Processing by KeywordsController#show as JSON
   Parameters: {"keyword"=>"haloooo"}
   Rendered keywords/show.html.erb within layouts/application (0.0ms)
 Completed 200 OK in 61ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:35:56 -0700
+
+SyntaxError (/Users/mike/Desktop/google-drive/programming/twitter-code-challenge/app/controllers/keywords_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/keywords_controller.rb:17: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (123.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:36:41 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.5ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 105ms (Views: 80.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:36:42 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:36:42 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:36:42 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:36:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:36:42 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:36:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:36:42 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:36:44 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `search' for nil:NilClass):
+  app/controllers/keywords_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (55.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.8ms)
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:36:57 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `search' for nil:NilClass):
+  app/controllers/keywords_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (51.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (96.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:37:16 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.6ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 54ms (Views: 44.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:37:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:37:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:37:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:37:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:37:16 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:37:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:37:16 -0700
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 18:37:19 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"monkey"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `search' for nil:NilClass):
+  app/controllers/keywords_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (136.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:40:33 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.6ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 305ms (Views: 278.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:40:33 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:40:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:40:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:40:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:40:34 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:40:34 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:40:34 -0700
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 18:40:37 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"monkey"}
+Completed 500 Internal Server Error in 622ms (ActiveRecord: 0.0ms)
+
+Twitter::Error::Forbidden (Unable to verify your credentials):
+  app/controllers/keywords_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (73.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (50.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (119.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:43:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.5ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 249ms (Views: 229.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:44:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:44:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:44:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:44:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:44:00 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:44:00 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:44:00 -0700
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 18:44:04 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"monkey"}
+Completed 200 OK in 673ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:45:16 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.6ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 182ms (Views: 140.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:45:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:45:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:45:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:45:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:45:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:45:16 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:45:16 -0700
+
+
+Started GET "/keywords/show?keyword=catzzz" for ::1 at 2015-08-03 18:45:19 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"catzzz"}
+Completed 200 OK in 330ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:45:42 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 63ms (Views: 47.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:45:43 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:45:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:45:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:45:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:45:43 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:45:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:45:43 -0700
+
+
+Started GET "/keywords/show?keyword=catzzzz" for ::1 at 2015-08-03 18:45:45 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"catzzzz"}
+Completed 200 OK in 1100ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:46:23 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.1ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 63ms (Views: 54.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:46:24 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:46:24 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:46:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:46:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:46:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:46:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:46:24 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 18:46:27 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"meow"}
+Completed 200 OK in 721ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:47:49 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 72ms (Views: 49.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:47:49 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:47:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:47:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:47:50 -0700
+
+
+Started GET "/assets/keywords.self-6fcd3a6faa3c04381e5026dcd5f6a59810274aab9883cca41b8b764a8e1c2bd3.js?body=1" for ::1 at 2015-08-03 18:47:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:47:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:47:50 -0700
+
+
+Started GET "/keywords/show?keyword=kitten" for ::1 at 2015-08-03 18:47:54 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"kitten"}
+Completed 200 OK in 492ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:50:18 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 221ms (Views: 218.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:50:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:50:19 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:50:19 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:50:19 -0700
+
+
+Started GET "/assets/keywords.self-6b43f4ccd0dcfd3206541639ffcae0aca22418850284445ac8b0aa18e1b7d75d.js?body=1" for ::1 at 2015-08-03 18:50:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:50:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:50:19 -0700
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-03 18:50:21 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cat"}
+Completed 200 OK in 647ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:52:54 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 151ms (Views: 148.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:52:55 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:52:55 -0700
+
+
+Started GET "/assets/keywords.self-5471b59b9af6d6817b2aca7e0b883ec10a5dd8321553561d69674489a8db3a96.js?body=1" for ::1 at 2015-08-03 18:52:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:52:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:52:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:52:55 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:52:55 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 18:52:58 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"meow"}
+Completed 200 OK in 504ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:53:09 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 160ms (Views: 156.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:53:10 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:53:10 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:53:10 -0700
+
+
+Started GET "/assets/keywords.self-4373995735067387cab9d4bf548b130d588b165c44f19ef790998b1efc654775.js?body=1" for ::1 at 2015-08-03 18:53:10 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:53:10 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:53:10 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:53:10 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 18:53:12 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"meow"}
+Completed 200 OK in 588ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:53:45 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 131ms (Views: 129.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:53:46 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:53:46 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:53:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:53:46 -0700
+
+
+Started GET "/assets/keywords.self-24bf12eef294ed8905d4930ad150a06df13d6f5802732a484e78e1fa8787df3e.js?body=1" for ::1 at 2015-08-03 18:53:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:53:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:53:46 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:53:52 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 1037ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:54:45 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.6ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 166ms (Views: 162.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:54:45 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:54:45 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:54:45 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:54:45 -0700
+
+
+Started GET "/assets/keywords.self-3129055ddc322b0005ebf9af1fe1afe9ef4dbc4bdd28ad2a218c237a6f6c5251.js?body=1" for ::1 at 2015-08-03 18:54:45 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:54:45 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:54:45 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:54:47 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 925ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:55:41 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.9ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 174ms (Views: 167.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:55:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:55:41 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:55:41 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:55:41 -0700
+
+
+Started GET "/assets/keywords.self-32271e390fa443fb3c48cd12b000a1d83d880d568f9c2209a381e0df438b0392.js?body=1" for ::1 at 2015-08-03 18:55:41 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:55:41 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:55:41 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:55:43 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 1411ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:56:30 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 152ms (Views: 149.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:56:31 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:56:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:56:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:56:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:56:31 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:56:31 -0700
+
+
+Started GET "/assets/keywords.self-e61fa4e1f20e0baf6a31ee5e6afce647212557437bb4b995bc99c517c9cb5ef3.js?body=1" for ::1 at 2015-08-03 18:56:31 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:56:35 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 457ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:57:02 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 179ms (Views: 176.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:57:02 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:57:02 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:57:02 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:57:02 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:57:02 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:57:02 -0700
+
+
+Started GET "/assets/keywords.self-43e0240154c38b1e62aa8d3f297b9ba485234562ca5e6f16cc7d82f65e780c7b.js?body=1" for ::1 at 2015-08-03 18:57:02 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:57:04 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 891ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:57:43 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.5ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 206ms (Views: 201.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:57:43 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:57:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:57:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:57:43 -0700
+
+
+Started GET "/assets/keywords.self-42e6361fe6a29276d7775486a9ac6dad6ef44f4a8423ec9fa5d756c0d3bf81b0.js?body=1" for ::1 at 2015-08-03 18:57:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:57:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:57:43 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 18:57:45 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 945ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:58:24 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 137ms (Views: 134.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:58:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:58:25 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:58:25 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:58:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:58:25 -0700
+
+
+Started GET "/assets/keywords.self-21581776c83fb5e2102b2a32d156cdd804608de2cf0d4420daed65b2b88fa047.js?body=1" for ::1 at 2015-08-03 18:58:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:58:25 -0700
+
+
+Started GET "/keywords/show?keyword=dogs" for ::1 at 2015-08-03 18:58:28 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"dogs"}
+Completed 200 OK in 1420ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:59:00 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.6ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 152ms (Views: 140.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:59:00 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:59:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:59:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:59:00 -0700
+
+
+Started GET "/assets/keywords.self-dff1fb9b8832935a8fd5d4fd3173a1983c608ebe2217a4b6b4638b6d0d02201a.js?body=1" for ::1 at 2015-08-03 18:59:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:59:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:59:00 -0700
+
+
+Started GET "/keywords/show?keyword=dogs" for ::1 at 2015-08-03 18:59:04 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"dogs"}
+Completed 200 OK in 523ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:59:24 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 144ms (Views: 141.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 18:59:24 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 18:59:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 18:59:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 18:59:24 -0700
+
+
+Started GET "/assets/keywords.self-6274b0d160e50cac2218bbd5b717266670d77e963a6fdd66a405139e4c3b7b3e.js?body=1" for ::1 at 2015-08-03 18:59:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 18:59:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 18:59:24 -0700
+
+
+Started GET "/keywords/show?keyword=" for ::1 at 2015-08-03 18:59:26 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>""}
+Completed 500 Internal Server Error in 753ms (ActiveRecord: 0.0ms)
+
+Twitter::Error::BadRequest (Query parameters are missing.):
+  app/controllers/keywords_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (62.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (129.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 18:59:31 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:09:54 -0700
+
+SyntaxError (/Users/mike/Desktop/google-drive/programming/twitter-code-challenge/app/controllers/keywords_controller.rb:14: syntax error, unexpected ')'):
+  app/controllers/keywords_controller.rb:14: syntax error, unexpected ')'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (63.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (109.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:10:00 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 84ms (Views: 54.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:10:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:10:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:10:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:10:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:10:01 -0700
+
+
+Started GET "/assets/keywords.self-6274b0d160e50cac2218bbd5b717266670d77e963a6fdd66a405139e4c3b7b3e.js?body=1" for ::1 at 2015-08-03 19:10:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:10:01 -0700
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-03 19:10:10 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"cat"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "cat"], ["created_at", "2015-08-04 02:10:10.810570"], ["updated_at", "2015-08-04 02:10:10.810570"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1204ms (Views: 0.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-03 19:12:37 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"cat"}
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "cat"], ["created_at", "2015-08-04 02:12:37.221554"], ["updated_at", "2015-08-04 02:12:37.221554"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 12], ["content", "Will you be my kitty cat?"], ["url", "https://twitter.com/GaelicBot/status/628387957385236480"], ["created_at", "2015-08-04 02:12:38.088164"], ["updated_at", "2015-08-04 02:12:38.088164"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 12], ["content", "@cat_boxgarden グラサンなんとかの一階のエスカレーターの、あいだのベンチで座ってる"], ["url", "https://twitter.com/Yadokari0720/status/628387953824247808"], ["created_at", "2015-08-04 02:12:38.092231"], ["updated_at", "2015-08-04 02:12:38.092231"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 12], ["content", "RT @5sosthewiggles: Reason #17 \n\nPurple wiggle saving a cat\n\nIn the don't stop music video Ashton saves a cat http://t.co/qwVqesi6JG"], ["url", "https://twitter.com/lukeeywukeyy/status/628387949596528640"], ["created_at", "2015-08-04 02:12:38.096312"], ["updated_at", "2015-08-04 02:12:38.096312"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 915ms (Views: 0.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 19:12:45 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"meow"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "meow"], ["created_at", "2015-08-04 02:12:45.488176"], ["updated_at", "2015-08-04 02:12:45.488176"]]
+  [1m[35m (8.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 13], ["content", "@IsisKramers1 wittle bit late meow"], ["url", "https://twitter.com/SkyeLynn_96/status/628387943363837952"], ["created_at", "2015-08-04 02:12:46.279794"], ["updated_at", "2015-08-04 02:12:46.279794"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 13], ["content", "can i be Lana Del Rey or no?"], ["url", "https://twitter.com/meow_savannah/status/628387937252720640"], ["created_at", "2015-08-04 02:12:46.291468"], ["updated_at", "2015-08-04 02:12:46.291468"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 13], ["content", "RT @WORIDSTARHIPH0P: SAVAGE http://t.co/wwQwYkCTcP"], ["url", "https://twitter.com/Jaquelin_Meow/status/628387928104812548"], ["created_at", "2015-08-04 02:12:46.295465"], ["updated_at", "2015-08-04 02:12:46.295465"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 819ms (Views: 0.1ms | ActiveRecord: 19.8ms)
+  [1m[36mTweet Load (1.9ms)[0m  [1mSELECT "tweets".* FROM "tweets"[0m
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 19:15:17 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"monkey"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "monkey"], ["created_at", "2015-08-04 02:15:17.704876"], ["updated_at", "2015-08-04 02:15:17.704876"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 14], ["content", "@hyuga_makuaga そうなのよ。"], ["url", "https://twitter.com/monkey_0124/status/628388623772037120"], ["created_at", "2015-08-04 02:15:18.289765"], ["updated_at", "2015-08-04 02:15:18.289765"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 14], ["content", "Do you feel unhappiness in your monkey mind? Take the quiz: http://t.co/O6GZ762TzF http://t.co/w7SpnJw35T"], ["url", "https://twitter.com/AfraGalbraith/status/628388605417787392"], ["created_at", "2015-08-04 02:15:18.293786"], ["updated_at", "2015-08-04 02:15:18.293786"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 14], ["content", "RT @political_drama: เกิดเป็นไทย ไม่รักไทย ใครจะรัก\nใจไม่ภักดิ์ ใจเป็นพาล สันดานเสีย\nปากก็เห่า เขลาโง่ โชว์คำเลีย\nคิดแล้วเพลีย เสียศักดิ์ ไ…"], ["url", "https://twitter.com/Grace_monkey/status/628388601613565952"], ["created_at", "2015-08-04 02:15:18.297332"], ["updated_at", "2015-08-04 02:15:18.297332"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 652ms (Views: 0.8ms | ActiveRecord: 7.6ms)
+  [1m[35mTweet Load (0.9ms)[0m  SELECT "tweets".* FROM "tweets"
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 19:16:56 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"monkey"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "monkey"], ["created_at", "2015-08-04 02:16:56.889031"], ["updated_at", "2015-08-04 02:16:56.889031"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 15], ["content", "Monkey Donkey love ♡"], ["url", "https://twitter.com/SanVolar/status/628389016333713409"], ["created_at", "2015-08-04 02:16:57.994989"], ["updated_at", "2015-08-04 02:16:57.994989"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 15], ["content", "I forgot what Space Monkey was called so I was calling it Gleek. Now I have a Lost in Space Space Ghost mashup in my head"], ["url", "https://twitter.com/ChaoticRambler/status/628389009882886144"], ["created_at", "2015-08-04 02:16:57.998599"], ["updated_at", "2015-08-04 02:16:57.998599"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 15], ["content", "Monkey Soap,Party Favors, Color Choice, Fragrance Choice .. http://t.co/Hblz4crm0e  #madeto order #homemade http://t.co/e6QycFDxEK"], ["url", "https://twitter.com/mamascreations/status/628388987380568064"], ["created_at", "2015-08-04 02:16:58.002131"], ["updated_at", "2015-08-04 02:16:58.002131"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1125ms (Views: 0.1ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 19:17:00 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"monkey"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "monkey"], ["created_at", "2015-08-04 02:17:00.034657"], ["updated_at", "2015-08-04 02:17:00.034657"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 16], ["content", "Monkey Donkey love ♡"], ["url", "https://twitter.com/SanVolar/status/628389016333713409"], ["created_at", "2015-08-04 02:17:00.665838"], ["updated_at", "2015-08-04 02:17:00.665838"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 16], ["content", "I forgot what Space Monkey was called so I was calling it Gleek. Now I have a Lost in Space Space Ghost mashup in my head"], ["url", "https://twitter.com/ChaoticRambler/status/628389009882886144"], ["created_at", "2015-08-04 02:17:00.677996"], ["updated_at", "2015-08-04 02:17:00.677996"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 16], ["content", "Monkey Soap,Party Favors, Color Choice, Fragrance Choice .. http://t.co/Hblz4crm0e  #madeto order #homemade http://t.co/e6QycFDxEK"], ["url", "https://twitter.com/mamascreations/status/628388987380568064"], ["created_at", "2015-08-04 02:17:00.682685"], ["updated_at", "2015-08-04 02:17:00.682685"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 661ms (Views: 0.3ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/keywords/" for ::1 at 2015-08-03 19:17:06 -0700
+
+ActionController::RoutingError (No route matches [GET] "/keywords"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (20.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (133.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:17:11 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.4ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 151ms (Views: 147.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:17:12 -0700
+
+
+Started GET "/" for ::1 at 2015-08-03 19:17:56 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:17:57 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:17:57 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:17:57 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:17:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:17:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:17:57 -0700
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:17:57 -0700
+
+
+Started GET "/keywords/show?keyword=banana" for ::1 at 2015-08-03 19:18:02 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"banana"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "banana"], ["created_at", "2015-08-04 02:18:02.133721"], ["updated_at", "2015-08-04 02:18:02.133721"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 17], ["content", "CUAL ES LA DIFERENCIA ENTRE BANANA-FRESA Y FRESA-BANANA"], ["url", "https://twitter.com/catsukki/status/628389307007533056"], ["created_at", "2015-08-04 02:18:03.459059"], ["updated_at", "2015-08-04 02:18:03.459059"]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 17], ["content", "27 Cities To Visit If You Really Love Ice Cream - Now that we’re in the thick of summer and National Banana Split ... http://t.co/io5ytOE7z6"], ["url", "https://twitter.com/data_nerd/status/628389303563997184"], ["created_at", "2015-08-04 02:18:03.471951"], ["updated_at", "2015-08-04 02:18:03.471951"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 17], ["content", "RT @SpaceshipsLB: This chocolate mango banana bread #Recipe is delicious &amp; easy! http://t.co/FPyhaKUSY5 #QuakerRealMedleys #Ad http://t.co/…"], ["url", "https://twitter.com/AFrugalFriend/status/628389303509516288"], ["created_at", "2015-08-04 02:18:03.476570"], ["updated_at", "2015-08-04 02:18:03.476570"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1359ms (Views: 0.2ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:19:02 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/keywords/show?keyword=banana" for ::1 at 2015-08-03 19:19:14 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"banana"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "banana"], ["created_at", "2015-08-04 02:19:14.923628"], ["updated_at", "2015-08-04 02:19:14.923628"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 18], ["content", "Bananas are fantastic sources of nutrients and also include three natural sugars including glucose, fructose, and... http://t.co/XevAHk9W0Q"], ["url", "https://twitter.com/XSWeightLoss/status/628389607139229696"], ["created_at", "2015-08-04 02:19:15.584782"], ["updated_at", "2015-08-04 02:19:15.584782"]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 18], ["content", "I can't put a banana or anything long straight in my mouth bro. I think that is hella homo fr. I gotta cut it in slices rt"], ["url", "https://twitter.com/2_comfy21/status/628389603943165952"], ["created_at", "2015-08-04 02:19:15.599557"], ["updated_at", "2015-08-04 02:19:15.599557"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 18], ["content", "O Mendes comprou-me duas gomas de banana no sábado 😄😏"], ["url", "https://twitter.com/olasouanana/status/628389603851026432"], ["created_at", "2015-08-04 02:19:15.605181"], ["updated_at", "2015-08-04 02:19:15.605181"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 692ms (Views: 0.1ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/keywords/show?keyword=banana" for ::1 at 2015-08-03 19:19:51 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"banana"}
+Completed 500 Internal Server Error in 979ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `this_keyword' for #<KeywordsController:0x007fa2fb3608a8>):
+  app/controllers/keywords_controller.rb:13:in `block in show'
+  app/controllers/keywords_controller.rb:12:in `each'
+  app/controllers/keywords_controller.rb:12:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (48.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (108.0ms)
+
+
+Started GET "/keywords/show?keyword=hallo" for ::1 at 2015-08-03 19:19:57 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"hallo"}
+Completed 500 Internal Server Error in 1039ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `this_keyword' for #<KeywordsController:0x007fa2ff3b9490>):
+  app/controllers/keywords_controller.rb:13:in `block in show'
+  app/controllers/keywords_controller.rb:12:in `each'
+  app/controllers/keywords_controller.rb:12:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (94.7ms)
+
+
+Started GET "/keywords/show?keyword=hallo" for ::1 at 2015-08-03 19:20:23 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"hallo"}
+Completed 200 OK in 414ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:20:27 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 121ms (Views: 91.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:20:27 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:20:27 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:20:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:20:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:20:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:20:27 -0700
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:20:27 -0700
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 19:20:31 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"monkey"}
+Completed 200 OK in 734ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:21:05 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:21:05 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:21:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:21:05 -0700
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:21:05 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:21:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:21:06 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:21:06 -0700
+
+
+Started GET "/keywords/show?keyword=monkey" for ::1 at 2015-08-03 19:21:10 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"monkey"}
+Completed 200 OK in 812ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:21:14 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 66ms (Views: 64.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:22:47 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (2.9ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 112ms (Views: 91.9ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:22:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:22:48 -0700
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:22:48 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:22:48 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:22:48 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:22:48 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:22:48 -0700
+
+
+Started GET "/" for ::1 at 2015-08-03 19:22:50 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 84ms (Views: 81.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:22:50 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:22:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:22:50 -0700
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:22:50 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:22:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:22:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:22:50 -0700
+
+
+Started GET "/keywords/show?keyword=snapple" for ::1 at 2015-08-03 19:22:53 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"snapple"}
+Completed 200 OK in 805ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:23:01 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:23:25 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.1ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 61ms (Views: 46.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:23:25 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:23:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:23:25 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:23:25 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:23:25 -0700
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:23:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:23:25 -0700
+
+
+Started GET "/keywords/show?keyword=cake" for ::1 at 2015-08-03 19:23:28 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"cake"}
+Completed 200 OK in 831ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:23:31 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:25:33 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.5ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 125ms (Views: 74.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:25:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:25:33 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:25:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:25:33 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:25:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:25:33 -0700
+
+
+Started GET "/assets/keywords.self-76cb06c8c4aea8c8d9ee1807aa8bd8eb4c5409a1c999f91ea7cd8158b828876d.js?body=1" for ::1 at 2015-08-03 19:25:33 -0700
+
+
+Started GET "/keywords/show?keyword=cake" for ::1 at 2015-08-03 19:25:47 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"cake"}
+Completed 200 OK in 871ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:26:01 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.5ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 141ms (Views: 136.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:26:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:26:01 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:26:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:26:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:26:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:26:01 -0700
+
+
+Started GET "/assets/keywords.self-439f11e100254e3bd4efad0d763a4e9e1cfee9e5831c19f3c02cde3dea3587da.js?body=1" for ::1 at 2015-08-03 19:26:01 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 19:26:05 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"meow"}
+Completed 200 OK in 968ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:26:19 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (6.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 149ms (Views: 107.0ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:26:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 325ms (Views: 301.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:26:55 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:26:55 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:26:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:26:55 -0700
+
+
+Started GET "/assets/keywords.self-439f11e100254e3bd4efad0d763a4e9e1cfee9e5831c19f3c02cde3dea3587da.js?body=1" for ::1 at 2015-08-03 19:26:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:26:55 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:26:55 -0700
+
+
+Started GET "/keywords/show?keyword=kitten" for ::1 at 2015-08-03 19:26:59 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"kitten"}
+Completed 200 OK in 831ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateKeywords (20150803232002)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "keywords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803232002"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateTweets (20150803232358)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "tweets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "keyword_id" integer, "content" varchar, "url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150803232358"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "cats"], ["created_at", "2015-08-04 02:29:38.578960"], ["updated_at", "2015-08-04 02:29:38.578960"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "dogs"], ["created_at", "2015-08-04 02:29:38.583685"], ["updated_at", "2015-08-04 02:29:38.583685"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "corgis"], ["created_at", "2015-08-04 02:29:38.585952"], ["updated_at", "2015-08-04 02:29:38.585952"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "snapple"], ["created_at", "2015-08-04 02:29:38.588199"], ["updated_at", "2015-08-04 02:29:38.588199"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "oprah"], ["created_at", "2015-08-04 02:29:38.592720"], ["updated_at", "2015-08-04 02:29:38.592720"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "iphone"], ["created_at", "2015-08-04 02:29:38.597290"], ["updated_at", "2015-08-04 02:29:38.597290"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2015-08-03 19:29:40 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.1ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 66ms (Views: 54.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:29:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:29:40 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:29:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:29:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:29:40 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:29:40 -0700
+
+
+Started GET "/assets/keywords.self-439f11e100254e3bd4efad0d763a4e9e1cfee9e5831c19f3c02cde3dea3587da.js?body=1" for ::1 at 2015-08-03 19:29:40 -0700
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-03 19:29:45 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"cat"}
+Completed 200 OK in 486ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:29:49 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:31:05 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:31:06 -0700
+
+
+Started GET "/assets/keywords.self-6274b0d160e50cac2218bbd5b717266670d77e963a6fdd66a405139e4c3b7b3e.js?body=1" for ::1 at 2015-08-03 19:31:06 -0700
+
+
+Started GET "/keywords/show?keyword=kittens" for ::1 at 2015-08-03 19:31:09 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"kittens"}
+Completed 200 OK in 848ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:35:15 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 100ms (Views: 69.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:35:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:35:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:35:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:35:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:35:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:35:16 -0700
+
+
+Started GET "/assets/keywords.self-6274b0d160e50cac2218bbd5b717266670d77e963a6fdd66a405139e4c3b7b3e.js?body=1" for ::1 at 2015-08-03 19:35:16 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 19:35:18 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 980ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 19:36:46 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"cats"}
+Completed 200 OK in 1615ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 19:38:06 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (1.1ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 206ms (Views: 189.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 19:38:06 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 19:38:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 19:38:06 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 19:38:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 19:38:06 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 19:38:06 -0700
+
+
+Started GET "/assets/keywords.self-06884c5442dde40ec10175d5feccc5cb6d95d0ce0b1050264a98753f962d3505.js?body=1" for ::1 at 2015-08-03 19:38:06 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 19:38:09 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"meow"}
+Completed 200 OK in 586ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 21:53:09 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.7ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 120ms (Views: 65.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 21:53:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 21:53:09 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 21:53:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 21:53:09 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 21:53:09 -0700
+
+
+Started GET "/assets/keywords.self-06884c5442dde40ec10175d5feccc5cb6d95d0ce0b1050264a98753f962d3505.js?body=1" for ::1 at 2015-08-03 21:53:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 21:53:09 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-03 21:53:12 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+Completed 500 Internal Server Error in 573ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `this_keyword' for #<KeywordsController:0x007fd1d4415c28>):
+  app/controllers/keywords_controller.rb:12:in `block in show'
+  app/controllers/keywords_controller.rb:11:in `each'
+  app/controllers/keywords_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (57.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (51.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (116.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 21:53:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.5ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5
+  Rendered keywords/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 236ms (Views: 216.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 21:53:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 21:53:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 21:53:47 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 21:53:47 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 21:53:47 -0700
+
+
+Started GET "/assets/keywords.self-06884c5442dde40ec10175d5feccc5cb6d95d0ce0b1050264a98753f962d3505.js?body=1" for ::1 at 2015-08-03 21:53:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 21:53:47 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 21:53:51 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"meow"}
+Completed 500 Internal Server Error in 843ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `this_keyword' for #<KeywordsController:0x007ff1c4f60d48>):
+  app/controllers/keywords_controller.rb:12:in `block in show'
+  app/controllers/keywords_controller.rb:11:in `each'
+  app/controllers/keywords_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.text.erb (58.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (54.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-03 21:54:30 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (2.4ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 5[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 60ms (Views: 48.5ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-03 21:54:30 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-03 21:54:30 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-03 21:54:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-03 21:54:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-03 21:54:30 -0700
+
+
+Started GET "/assets/keywords.self-06884c5442dde40ec10175d5feccc5cb6d95d0ce0b1050264a98753f962d3505.js?body=1" for ::1 at 2015-08-03 21:54:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-03 21:54:30 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-03 21:54:33 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"meow"}
+Completed 200 OK in 1651ms (Views: 0.3ms | ActiveRecord: 0.0ms)
