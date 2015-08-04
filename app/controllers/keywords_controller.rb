@@ -6,5 +6,7 @@ class KeywordsController < ApplicationController
 
   def show
     #accept ajax, call to Twitter API, write info to DB, then show tweets
+    p params
+    keyword = params[:keyword]
   end
 end
