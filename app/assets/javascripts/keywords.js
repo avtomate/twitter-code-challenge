@@ -5,6 +5,7 @@
 
 $(document).ready(function(){
   findTweets();
+  keywordRetrieve();
 })
 
 function findTweets(){
@@ -22,7 +23,26 @@ function findTweets(){
       for(var i=0; i < response.tweets.length; i++) {
         var urlAnchor = "<a href=https://twitter.com/" + response.tweets[i].user.screen_name + "/status/" + response.tweets[i].id_str + ">"
         console.log(urlAnchor)
-        $('#tweet-holder').append(urlAnchor + (i+1) + ". " + response.tweets[i].text + "</a><br><br>")
+        $('#tweet-holder').append("<br>" + urlAnchor + (i+1) + ". " + response.tweets[i].text + "</a><br>")
+      }
+    })
+  })
+}
+
+function keywordRetrieve(){
+  $('.keywords').on('click', function(e){
+    e.preventDefault();
+    var url = $(this).attr('href');
+    var type = $(this).attr('method');
+    var data = {"keyword": $(this).text()}
+    $.ajax({
+      type: type,
+      url: url,
+      data: data,
+      dataType: 'JSON'
+    }).done(function(response){
+      for(var i=0; i < response.tweets.length; i++) {
+        $('#tweet-holder').append("<br>" + (i+1) + ". " + response.tweets[i].content + "<br>")
       }
     })
   })

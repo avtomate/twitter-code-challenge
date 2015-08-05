@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'keywords/keyword_tweets'
   get 'keywords/show'
   root 'keywords#index'
   # The priority is based upon order of creation: first created -> highest priority.
