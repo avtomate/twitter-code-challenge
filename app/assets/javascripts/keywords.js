@@ -20,9 +20,11 @@ function findTweets(){
       dataType: 'JSON'
     }).done(function(response){
       console.log(response)
+      if ( $('#tweet-holder a').length > 0 ) {
+        $("#tweet-holder").html("");
+      }
       for(var i=0; i < response.tweets.length; i++) {
         var urlAnchor = "<a href=https://twitter.com/" + response.tweets[i].user.screen_name + "/status/" + response.tweets[i].id_str + ">"
-        console.log(urlAnchor)
         $('#tweet-holder').append("<br>" + urlAnchor + (i+1) + ". " + response.tweets[i].text + "</a><br>")
       }
     })

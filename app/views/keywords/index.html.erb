@@ -1,17 +1,26 @@
-<h3>Last 10 Searched Keywords:</h3>
-<ul>
-<% @keywords.each_with_index do |keyword,i| %>
-  <li>
-    <a href="/keywords/keyword_tweets/" id="<%=keyword.content%>" class="keywords" type='get'><%= keyword.content %></a>
-  </li>
-<% end %>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h3>Search for Tweets with Keyword:</h3>
+      <form action="/keywords/show" method="get" id="form">
+        <span><input type="text" name="keyword" class="input-md col-md-8"></span>
+        <span><input type="submit" value="Find Tweets" class="btn btn-sm"></span>
+      </form>
 
-<h3>Search for Tweets with Keyword:</h3>
-<form action="/keywords/show" method="get" id="form">
-  Keyword: <input type="text" name="keyword"><br><br>
-  <input type="submit" value="Find Tweets" class="btn btn-lg btn-primary">
-</form>
+      <div class="container-fluid" id="tweet-holder">
+      </div>
 
-<div class="container-fluid" id="tweet-holder">
+    </div>
+
+    <div class="col-md-4">
+      <h3>Last 10 Searched Keywords:</h3>
+      <ul>
+      <% @keywords.each_with_index do |keyword,i| %>
+        <li>
+          <a href="/keywords/keyword_tweets/" id="<%=keyword.content%>" class="keywords" type='get'><%= keyword.content %></a>
+        </li>
+      <% end %>
+      </ul>
+    </div>
+  </div>
 </div>

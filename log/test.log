@@ -1,0 +1,135 @@
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "keywords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "tweets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "keyword_id" integer, "content" varchar, "url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150803232358')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150803232002')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "keywords"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:29:33', '2015-08-07 16:29:33', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:29:33', '2015-08-07 16:29:33', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "tweets"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:29:33', '2015-08-07 16:29:33', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:29:33', '2015-08-07 16:29:33', 298486374)
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------
+KeywordTest: test_the_truth
+---------------------------
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "keywords"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:34', '2015-08-07 16:30:34', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:34', '2015-08-07 16:30:34', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "tweets"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:34', '2015-08-07 16:30:34', 980190962)[0m
+  [1m[35mFixture Insert (0.0ms)[0m  INSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:34', '2015-08-07 16:30:34', 298486374)
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------
+KeywordTest: test_the_truth
+---------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------
+KeywordTest: test_Keyword_length
+--------------------------------
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "keywords"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:52', '2015-08-07 16:30:52', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:52', '2015-08-07 16:30:52', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "tweets"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:52', '2015-08-07 16:30:52', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:30:52', '2015-08-07 16:30:52', 298486374)
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------
+KeywordTest: test_the_truth
+---------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+--------------------------------
+KeywordTest: test_Keyword_length
+--------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "keywords"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:22', '2015-08-07 16:31:22', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:22', '2015-08-07 16:31:22', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "tweets"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:22', '2015-08-07 16:31:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:22', '2015-08-07 16:31:22', 298486374)
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------
+KeywordTest: test_Keyword_length
+--------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+---------------------------
+KeywordTest: test_the_truth
+---------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "keywords"[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:53', '2015-08-07 16:31:53', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:53', '2015-08-07 16:31:53', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "tweets"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:53', '2015-08-07 16:31:53', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:31:53', '2015-08-07 16:31:53', 298486374)
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------
+KeywordTest: test_the_truth
+---------------------------
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+--------------------------------
+KeywordTest: test_Keyword_length
+--------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.6ms)[0m  [1mDELETE FROM "keywords"[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:33:07', '2015-08-07 16:33:07', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "keywords" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:33:07', '2015-08-07 16:33:07', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "tweets"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:33:07', '2015-08-07 16:33:07', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "tweets" ("created_at", "updated_at", "id") VALUES ('2015-08-07 16:33:07', '2015-08-07 16:33:07', 298486374)
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+----------------------------------------------
+KeywordTest: test_Keyword_length_less_than_min
+----------------------------------------------
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+---------------------------
+KeywordTest: test_the_truth
+---------------------------
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+-------------------------------------------
+KeywordTest: test_keyword_length_sufficient
+-------------------------------------------
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "Hi"], ["created_at", "2015-08-07 16:33:07.711798"], ["updated_at", "2015-08-07 16:33:07.711798"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.7ms)[0m  rollback transaction

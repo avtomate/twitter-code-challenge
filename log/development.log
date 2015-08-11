@@ -10455,3 +10455,2615 @@ Processing by KeywordsController#keyword_tweets as JSON
   [1m[36mKeyword Load (0.1ms)[0m  [1mSELECT  "keywords".* FROM "keywords" WHERE "keywords"."content" = ?  ORDER BY "keywords"."id" ASC LIMIT 1[0m  [["content", "red"]]
   [1m[35mTweet Load (0.2ms)[0m  SELECT "tweets".* FROM "tweets" WHERE "tweets"."keyword_id" = ?  [["keyword_id", 33]]
 Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 09:16:25 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (1.9ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 237ms (Views: 200.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:16:26 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:16:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:16:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:16:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:16:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:16:26 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:21:22 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.5ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:21:22 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:34:01 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.7ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 106ms (Views: 76.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:34:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:34:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:34:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:34:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:34:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:34:01 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:34:01 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:34:31 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.4ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 83ms (Views: 81.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:34:31 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:34:31 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:34:31 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:34:31 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:34:31 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:34:31 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:34:31 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:34:46 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:34:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:34:46 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:34:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:34:46 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:34:46 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:34:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:34:46 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:35:01 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:35:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:35:01 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:35:01 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:35:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:35:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:35:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:35:01 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:36:22 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 109ms (Views: 107.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:36:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:36:22 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:36:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:36:22 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:36:22 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:36:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:36:22 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:37:53 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:37:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:37:53 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:37:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:37:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:37:53 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:37:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:37:53 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:38:46 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 45ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:38:46 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:38:46 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:38:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:38:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:38:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:38:46 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:38:46 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:39:17 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.6ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 61ms (Views: 51.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:39:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:39:17 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:39:17 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:39:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:39:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:39:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:39:17 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:39:49 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:39:49 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:39:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:39:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:39:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:39:49 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:39:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:39:49 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:40:20 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:40:20 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:40:20 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:40:20 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:40:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:40:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:40:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:40:20 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:41:17 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.5ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 50ms (Views: 43.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:41:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:41:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:41:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:41:17 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:41:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:41:17 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:41:17 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:41:49 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:41:49 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:41:49 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:41:49 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:41:49 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:41:49 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:41:49 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:41:49 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:45:24 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (3.0ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 134ms (Views: 103.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:45:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:45:24 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:45:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:45:24 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:45:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:45:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:45:24 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:47:13 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:47:13 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:47:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:47:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:47:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:47:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:47:13 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:47:13 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:47:21 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:47:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:47:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:47:21 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:47:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:47:21 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:47:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:47:21 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:48:01 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:48:01 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:48:01 -0700
+
+
+Started GET "/assets/application.self-d4a898430fb683d7bae5d5e04842beef11cb2f84238b49b51e206d9b99b421be.css?body=1" for ::1 at 2015-08-07 09:48:01 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:48:01 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:48:01 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:48:01 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:48:01 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:48:29 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 179ms (Views: 177.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:48:29 -0700
+
+
+Started GET "/assets/application.self-8dec9d4499fc80c5f9b54b67adb36369eb1d38214a426cfd4e8ee0d2a39edaf4.css?body=1" for ::1 at 2015-08-07 09:48:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:48:29 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:48:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:48:29 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:48:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:48:29 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:50:23 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (1.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 72ms (Views: 55.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:50:23 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:50:23 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:50:23 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:50:23 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:50:23 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:50:23 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:50:23 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:53:07 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:53:07 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:53:07 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:53:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:53:07 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:53:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:53:07 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:53:07 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:53:56 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:53:56 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:53:56 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:53:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:53:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:53:56 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:53:56 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:53:56 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:54:40 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:54:40 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:54:40 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:54:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:54:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:54:40 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:54:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:54:40 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:55:15 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:55:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:55:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:55:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:55:15 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:55:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:55:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:55:15 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:55:16 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:55:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:55:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:55:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:55:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:55:16 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:55:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:55:17 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:56:04 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:56:05 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:56:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:56:05 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:56:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:56:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:56:05 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:56:05 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:56:20 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:56:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:56:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:56:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:56:20 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:56:20 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:56:20 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:56:20 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:56:33 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.4ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:56:33 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:56:33 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:56:33 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:56:33 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:56:33 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:56:33 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:56:33 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:57:59 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:57:59 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:57:59 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:57:59 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:57:59 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:57:59 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:57:59 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:57:59 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:59:19 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:59:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:59:19 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:59:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:59:19 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:59:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:59:19 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:59:19 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:59:21 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 184ms (Views: 182.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:59:21 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:59:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:59:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:59:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:59:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:59:21 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:59:21 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 09:59:54 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 09:59:54 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 09:59:54 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 09:59:54 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 09:59:54 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 09:59:54 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 09:59:54 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 09:59:54 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:01:50 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.9ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 92ms (Views: 75.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:01:51 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:01:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:01:51 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:01:51 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:01:51 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:01:51 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:01:51 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:03:36 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 54ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:03:36 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:03:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:03:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:03:36 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:03:36 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:03:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:03:36 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:03:43 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:03:43 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:03:43 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:03:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:03:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:03:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:03:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:03:43 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:04:17 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.4ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:04:17 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:04:17 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:04:17 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:04:17 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:04:17 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:04:17 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:04:17 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:06:17 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (1.0ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 97ms (Views: 79.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:06:18 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:06:18 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:06:18 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:06:18 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:06:18 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:06:18 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:06:18 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:06:35 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.5ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 83ms (Views: 79.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:06:35 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:06:35 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:06:35 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:06:35 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:06:35 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:06:35 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:06:35 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:06:53 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:06:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:06:53 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:06:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:06:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:06:53 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:06:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:06:53 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:08:07 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:08:07 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:08:07 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:08:07 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:08:07 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:08:07 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:08:07 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:08:07 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:08:44 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:08:44 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:08:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:08:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:08:44 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:08:44 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:08:44 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:08:45 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:08:57 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:08:57 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:08:57 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:08:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:08:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:08:57 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:08:57 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:08:57 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:09:50 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 71ms (Views: 68.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:09:50 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:09:50 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:09:50 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:09:50 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:09:50 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:09:50 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:09:51 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:10:40 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:10:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:10:40 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:10:40 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:10:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:10:40 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:10:40 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:10:40 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:11:22 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:11:22 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:11:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:11:22 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:11:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:11:22 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:11:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:11:22 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:13:15 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (1.0ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 113ms (Views: 92.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:13:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:13:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:13:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:13:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:13:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:13:16 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:13:16 -0700
+
+
+Started GET "/keywords/show?keyword=hello" for ::1 at 2015-08-07 10:13:21 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"hello"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "hello"], ["created_at", "2015-08-07 17:13:21.776779"], ["updated_at", "2015-08-07 17:13:21.776779"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 34], ["content", "@ViviannAmir haha hello. I like you back."], ["url", "https://twitter.com/aimanactually/status/629701793056817152"], ["created_at", "2015-08-07 17:13:23.627913"], ["updated_at", "2015-08-07 17:13:23.627913"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 34], ["content", "@utd_faruk \nHello. If you are interested in Kundalini awakening within a year, check this: https://t.co/0j4Wx9o01W"], ["url", "https://twitter.com/susan1ford1990/status/629701791819632640"], ["created_at", "2015-08-07 17:13:23.633992"], ["updated_at", "2015-08-07 17:13:23.633992"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 34], ["content", "@_nataliex0 hello my love 😚"], ["url", "https://twitter.com/b_blooop/status/629701791668682753"], ["created_at", "2015-08-07 17:13:23.637811"], ["updated_at", "2015-08-07 17:13:23.637811"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 34], ["content", "@BianMek1 hello"], ["url", "https://twitter.com/IsYouMukeAF/status/629701789508464640"], ["created_at", "2015-08-07 17:13:23.643071"], ["updated_at", "2015-08-07 17:13:23.643071"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 34], ["content", "hello fresh veggies!!! how are u guys http://t.co/NtVhrj3W9J"], ["url", "https://twitter.com/fuzzy_llamas/status/629701788309028864"], ["created_at", "2015-08-07 17:13:23.647095"], ["updated_at", "2015-08-07 17:13:23.647095"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 1916ms (Views: 0.5ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:13:58 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 66ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:13:58 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:13:58 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:13:58 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:13:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:13:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:13:58 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:13:58 -0700
+
+
+Started GET "/keywords/show?keyword=taco" for ::1 at 2015-08-07 10:14:02 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"taco"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "taco"], ["created_at", "2015-08-07 17:14:02.947310"], ["updated_at", "2015-08-07 17:14:02.947310"]]
+  [1m[35m (8.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 35], ["content", "#Buffalo #Job MIGHTY TACO -- TEAM MEMBERS (SHERIDAN DR. NEAR DELAWARE): NOW ACCEPTING APPLICATIONS \nWE OFFER: ... http://t.co/AJupDfr7Lg"], ["url", "https://twitter.com/BuffaloJobs_/status/629701958727696385"], ["created_at", "2015-08-07 17:14:04.006250"], ["updated_at", "2015-08-07 17:14:04.006250"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 35], ["content", "@mattatouille but that's not the comparison. the comparison is to the 100s of other taco stands (and trucks) out there. tito's isn't a chain"], ["url", "https://twitter.com/hillelaron/status/629701957423226880"], ["created_at", "2015-08-07 17:14:04.010127"], ["updated_at", "2015-08-07 17:14:04.010127"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 35], ["content", "When you realize your birthday is on taco tuesday http://t.co/Bxa4AArbej"], ["url", "https://twitter.com/M1chaelD1ckson/status/629701950884311040"], ["created_at", "2015-08-07 17:14:04.015191"], ["updated_at", "2015-08-07 17:14:04.015191"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (2.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 35], ["content", "#Job #Buffalo MIGHTY TACO -- TEAM MEMBERS (SHERIDAN DR. NEAR DELAWARE): NOW ACCEPTING APPLICATIONS \nWE OFFER: ... http://t.co/5YApVlApjL"], ["url", "https://twitter.com/Jobs_Buffalo1/status/629701948808114176"], ["created_at", "2015-08-07 17:14:04.021192"], ["updated_at", "2015-08-07 17:14:04.021192"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 35], ["content", "RT @MOGirlProbs: remember when I told you guys I was gonna get my senior pictures at taco bell and you thought I was joking http://t.co/GiJ…"], ["url", "https://twitter.com/CindyxGarcia/status/629701945381535744"], ["created_at", "2015-08-07 17:14:04.029147"], ["updated_at", "2015-08-07 17:14:04.029147"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1097ms (Views: 0.1ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:14:26 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:14:26 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:14:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:14:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:14:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:14:26 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:14:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:14:26 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:16:41 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 52ms (Views: 49.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:16:41 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:16:41 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:16:42 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:16:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:16:42 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:16:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:16:42 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:16:58 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.4ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 102ms (Views: 98.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:16:58 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:16:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:16:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:16:58 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:16:58 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:16:59 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:16:59 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:17:55 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:17:56 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:17:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:17:56 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:17:56 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:17:56 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:17:56 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:17:56 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:18:12 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:18:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:18:12 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:18:12 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:18:12 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:18:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:18:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:18:12 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:20:00 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (1.5ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 112ms (Views: 79.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:20:00 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:20:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:20:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:20:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:20:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:20:00 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:20:00 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:20:15 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:20:15 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:20:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:20:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:20:15 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:20:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:20:15 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:20:15 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:20:32 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:20:32 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:20:32 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:20:32 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:20:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:20:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:20:32 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:20:32 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:21:22 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:21:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:21:22 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:21:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:21:22 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:21:22 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:21:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:21:22 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:22:19 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:22:19 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:22:19 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:22:19 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:22:19 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:22:19 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:22:19 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:22:19 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:22:58 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.9ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 81ms (Views: 66.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:22:58 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:22:58 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:22:58 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:22:58 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:22:58 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:22:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:22:58 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:23:00 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 65ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:23:00 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:23:00 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:23:00 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:23:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:23:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:23:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:23:00 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:23:14 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:23:14 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:23:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:23:14 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:23:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:23:14 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:23:14 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:23:14 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:23:16 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:23:16 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:23:16 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:23:16 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:23:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:23:16 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:23:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:23:16 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:24:13 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.6ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:24:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:24:13 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:24:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:24:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:24:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:24:13 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:24:13 -0700
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-07 10:24:18 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cat"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "cat"], ["created_at", "2015-08-07 17:24:18.240300"], ["updated_at", "2015-08-07 17:24:18.240300"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 36], ["content", "RT @JoyceCarolOates: If a cat settles on a laptop keyboard you can still continue working by lifting paws, tail, etc. gently. Would not wor…"], ["url", "https://twitter.com/kaylee_wilkes/status/629704543945756672"], ["created_at", "2015-08-07 17:24:19.107206"], ["updated_at", "2015-08-07 17:24:19.107206"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 36], ["content", "@botti_nown \nそう？照れちゃう"], ["url", "https://twitter.com/hana__cat_y/status/629704541244502016"], ["created_at", "2015-08-07 17:24:19.110872"], ["updated_at", "2015-08-07 17:24:19.110872"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 36], ["content", "RT @SpaceCatPics: omg the cat thought his owner drowned http://t.co/jc7EPIipKs"], ["url", "https://twitter.com/Kryptonnite_/status/629704540644741120"], ["created_at", "2015-08-07 17:24:19.114299"], ["updated_at", "2015-08-07 17:24:19.114299"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 36], ["content", "RT @BBAnimals: this cat is so cute 😭 ~ http://t.co/CnkGuIJDIZ"], ["url", "https://twitter.com/filthyjaura/status/629704539034288129"], ["created_at", "2015-08-07 17:24:19.122953"], ["updated_at", "2015-08-07 17:24:19.122953"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 36], ["content", "寝れてない寝れてない"], ["url", "https://twitter.com/cat_servant/status/629704538329448448"], ["created_at", "2015-08-07 17:24:19.127894"], ["updated_at", "2015-08-07 17:24:19.127894"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 901ms (Views: 0.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:24:47 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:24:47 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:24:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:24:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:24:47 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:24:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:24:47 -0700
+
+
+Started GET "/assets/keywords.self-a419640935a14a3ec3182ab333af198b0a1ef3804c40cdce6a6730a63ce07c72.js?body=1" for ::1 at 2015-08-07 10:24:47 -0700
+
+
+Started GET "/keywords/show?keyword=meow" for ::1 at 2015-08-07 10:24:51 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"meow"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "meow"], ["created_at", "2015-08-07 17:24:51.152465"], ["updated_at", "2015-08-07 17:24:51.152465"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 37], ["content", "Meow Mix Song | EDM Cat Remix by Ashworth i want to be at this party! http://t.co/gmrhCczJaO"], ["url", "https://twitter.com/vhallblms/status/629704676221558784"], ["created_at", "2015-08-07 17:24:53.191414"], ["updated_at", "2015-08-07 17:24:53.191414"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 37], ["content", "RT @shirazakaria: Semoga Allah selalu lindungi awak, meow. http://t.co/EZFvzhKbj7"], ["url", "https://twitter.com/eykakifli/status/629704655837106176"], ["created_at", "2015-08-07 17:24:53.198203"], ["updated_at", "2015-08-07 17:24:53.198203"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 37], ["content", "RT @kitkatfk: Meow✨ http://t.co/iPTSONxZIz"], ["url", "https://twitter.com/elizabethfkbish/status/629704653480050688"], ["created_at", "2015-08-07 17:24:53.203529"], ["updated_at", "2015-08-07 17:24:53.203529"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 37], ["content", "И  сегодня я поняла, что робота розвозки обедов, опасная"], ["url", "https://twitter.com/Meow_Dguliua/status/629704652850860032"], ["created_at", "2015-08-07 17:24:53.208263"], ["updated_at", "2015-08-07 17:24:53.208263"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 37], ["content", "meow ni memang tak boleh la 😢"], ["url", "https://twitter.com/sheraraa/status/629704605908099072"], ["created_at", "2015-08-07 17:24:53.211783"], ["updated_at", "2015-08-07 17:24:53.211783"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 2074ms (Views: 0.3ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:27:30 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (3.0ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 275ms (Views: 241.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:27:30 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:27:30 -0700
+
+
+Started GET "/assets/keywords.self-d8a7d6c5df55a21232125bc4c8d0d906a7a121a0fb1eba7cd9d59c1a1f144021.js?body=1" for ::1 at 2015-08-07 10:27:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:27:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:27:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:27:30 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:27:30 -0700
+
+
+Started GET "/keywords/show?keyword=tacos" for ::1 at 2015-08-07 10:27:34 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"tacos"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "tacos"], ["created_at", "2015-08-07 17:27:34.713484"], ["updated_at", "2015-08-07 17:27:34.713484"]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 38], ["content", "RT @PlinioMagania: @eulisses_o invita los tacos mijo"], ["url", "https://twitter.com/alegissellejand/status/629705356910940160"], ["created_at", "2015-08-07 17:27:35.926301"], ["updated_at", "2015-08-07 17:27:35.926301"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 38], ["content", "RT @tacobell: I like tacos more than humans."], ["url", "https://twitter.com/brittniw7/status/629705354289360896"], ["created_at", "2015-08-07 17:27:35.932851"], ["updated_at", "2015-08-07 17:27:35.932851"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 38], ["content", "Pink Tacos! #fantasyfootballfrenzy"], ["url", "https://twitter.com/ShannaB2007/status/629705353375014912"], ["created_at", "2015-08-07 17:27:35.938763"], ["updated_at", "2015-08-07 17:27:35.938763"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 38], ["content", "@karaage_tacos 素直になって❤️"], ["url", "https://twitter.com/961oO/status/629705345829502976"], ["created_at", "2015-08-07 17:27:35.943085"], ["updated_at", "2015-08-07 17:27:35.943085"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 38], ["content", "No me dejan hacer dieta tranquila. Anoche mc, hoy tacos #AsiNo"], ["url", "https://twitter.com/garciaapau/status/629705343203962880"], ["created_at", "2015-08-07 17:27:35.946474"], ["updated_at", "2015-08-07 17:27:35.946474"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 200 OK in 1252ms (Views: 0.2ms | ActiveRecord: 17.5ms)
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-07 10:27:39 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cat"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "cat"], ["created_at", "2015-08-07 17:27:39.108703"], ["updated_at", "2015-08-07 17:27:39.108703"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 39], ["content", "RT @LynseyKondi: @alcissa @GERARDJAMESHAY elaaa little cat, bring the boss"], ["url", "https://twitter.com/GERARDJAMESHAY/status/629705383666405376"], ["created_at", "2015-08-07 17:27:39.492447"], ["updated_at", "2015-08-07 17:27:39.492447"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 39], ["content", "As noites de quinta.  o/. #airsoft #cat #carcaraairsoftteam http://t.co/XeNIjuAomw"], ["url", "https://twitter.com/gioguitar/status/629705381237903360"], ["created_at", "2015-08-07 17:27:39.496260"], ["updated_at", "2015-08-07 17:27:39.496260"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 39], ["content", "RT @NextSocialApp: The biggest problem with having a pikachu cat... http://t.co/sxVxQpY6kM"], ["url", "https://twitter.com/ethanooyic_acid/status/629705381174874112"], ["created_at", "2015-08-07 17:27:39.500257"], ["updated_at", "2015-08-07 17:27:39.500257"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 39], ["content", "Cat scarves, for when your cat is chill af https://t.co/VaoxdX0iT7"], ["url", "https://twitter.com/isiists/status/629705380172574721"], ["created_at", "2015-08-07 17:27:39.503975"], ["updated_at", "2015-08-07 17:27:39.503975"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 39], ["content", "RT @cassieclare: Sometimes I have the feeling my cat is plotting against me"], ["url", "https://twitter.com/lalauanna/status/629705379459559424"], ["created_at", "2015-08-07 17:27:39.507327"], ["updated_at", "2015-08-07 17:27:39.507327"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 412ms (Views: 0.2ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:28:26 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (1.0ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 270ms (Views: 244.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:28:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:28:26 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:28:26 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:28:26 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:28:26 -0700
+
+
+Started GET "/assets/keywords.self-df6072ace6c722f3d23efb70d5683ec9955e78de3dc4ed3a21d090376d3d2a2b.js?body=1" for ::1 at 2015-08-07 10:28:26 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:28:26 -0700
+
+
+Started GET "/keywords/show?keyword=dog" for ::1 at 2015-08-07 10:28:29 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"dog"}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "dog"], ["created_at", "2015-08-07 17:28:29.503460"], ["updated_at", "2015-08-07 17:28:29.503460"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 40], ["content", "Ishpeming MI: One Dog, Zero Answers #JusticeForTank http://t.co/eG7oEs1BcU via @NewsRevo"], ["url", "https://twitter.com/anoncdn/status/629705596070178816"], ["created_at", "2015-08-07 17:28:30.395312"], ["updated_at", "2015-08-07 17:28:30.395312"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 40], ["content", "@stoiclover So-so. Been going up and down. My best score is on my $9 ticket so I'm happy about that. But I also have a dog or two. And you?"], ["url", "https://twitter.com/jimmytheheel/status/629705592655904768"], ["created_at", "2015-08-07 17:28:30.398856"], ["updated_at", "2015-08-07 17:28:30.398856"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 40], ["content", "Falling Light Poles Have Bay Area People Pissed\nDecades of (hopefully) dog urine have sped corrosion at the base... http://t.co/OdLr0ehfzb"], ["url", "https://twitter.com/UsedCars4sa/status/629705590231707648"], ["created_at", "2015-08-07 17:28:30.403095"], ["updated_at", "2015-08-07 17:28:30.403095"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 40], ["content", "RT @AnnaKendrick47: I'm the police dog of finding stuff to complain about."], ["url", "https://twitter.com/_supcunt/status/629705589388480512"], ["created_at", "2015-08-07 17:28:30.406858"], ["updated_at", "2015-08-07 17:28:30.406858"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 40], ["content", "寝ている間に猫に舐めまくられている犬の動画|今日のわんこ動画｢わんだふる！｣ http://t.co/XtVavLfURt #pet #inu #wanko #dog #youtube #犬動画"], ["url", "https://twitter.com/dog_Wonderful/status/629705589048786945"], ["created_at", "2015-08-07 17:28:30.411921"], ["updated_at", "2015-08-07 17:28:30.411921"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 918ms (Views: 0.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-07 10:28:33 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cat"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "cat"], ["created_at", "2015-08-07 17:28:33.465869"], ["updated_at", "2015-08-07 17:28:33.465869"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 41], ["content", "Сорить деньгами http://t.co/3AHJWMj0mD"], ["url", "https://twitter.com/omrixume/status/629705612381847552"], ["created_at", "2015-08-07 17:28:34.007442"], ["updated_at", "2015-08-07 17:28:34.007442"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 41], ["content", "RT @AnaLuque1990: Hay mucha manipulación de los medios de comunicación, dan una imagen de Cat que nada a ver con la realidad http://t.co/EM…"], ["url", "https://twitter.com/carrasco_joan/status/629705608355315712"], ["created_at", "2015-08-07 17:28:34.011860"], ["updated_at", "2015-08-07 17:28:34.011860"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 41], ["content", "RT @DiarideGirona: Espectacular persecució en una operació antidroga a l'Alt Empordà http://t.co/3U2NDM3kPe"], ["url", "https://twitter.com/tibied/status/629705607713583104"], ["created_at", "2015-08-07 17:28:34.015003"], ["updated_at", "2015-08-07 17:28:34.015003"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 41], ["content", "RT @AnaLuque1990: Hay mucha manipulación de los medios de comunicación, dan una imagen de Cat que nada a ver con la realidad http://t.co/EM…"], ["url", "https://twitter.com/armeniohoffer/status/629705607227031552"], ["created_at", "2015-08-07 17:28:34.017815"], ["updated_at", "2015-08-07 17:28:34.017815"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 41], ["content", "RT @CollectiuEmma: If you might be visiting or spending the day in Barcelona city, why not join them? You could help make history: https://…"], ["url", "https://twitter.com/Rockybucket/status/629705606669168640"], ["created_at", "2015-08-07 17:28:34.020664"], ["updated_at", "2015-08-07 17:28:34.020664"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 568ms (Views: 0.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:29:04 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.2ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 133ms (Views: 131.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:29:04 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:29:04 -0700
+
+
+Started GET "/assets/keywords.self-1e178903c661017ef6c210ddc2055df30cedee52fd69cf8486c908a5821b4549.js?body=1" for ::1 at 2015-08-07 10:29:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:29:04 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:29:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:29:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:29:04 -0700
+
+
+Started GET "/keywords/show?keyword=cat" for ::1 at 2015-08-07 10:29:07 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cat"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "cat"], ["created_at", "2015-08-07 17:29:07.531323"], ["updated_at", "2015-08-07 17:29:07.531323"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 42], ["content", "@Sirull_cat http://t.co/MmTS2utpCQ"], ["url", "https://twitter.com/moko_j/status/629705755436822528"], ["created_at", "2015-08-07 17:29:08.223254"], ["updated_at", "2015-08-07 17:29:08.223254"]]
+  [1m[35m (8.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 42], ["content", "RT @VinCatrooftop: @Cat_145 @MyRamelle @Empress_beastie yeah S3 VC together but they look like they don't even love one another #BATB"], ["url", "https://twitter.com/CDPEbev/status/629705754790854656"], ["created_at", "2015-08-07 17:29:08.234949"], ["updated_at", "2015-08-07 17:29:08.234949"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 42], ["content", "Mood http://t.co/e7B5SxOXva"], ["url", "https://twitter.com/Cat_Spaws/status/629705754518396928"], ["created_at", "2015-08-07 17:29:08.238868"], ["updated_at", "2015-08-07 17:29:08.238868"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 42], ["content", "@elsingular @jordiborras Aquest sí que és glamourós collons!\n\nhttp://t.co/Q5iWnD3UPe"], ["url", "https://twitter.com/Cat_Gat/status/629705752710656000"], ["created_at", "2015-08-07 17:29:08.243303"], ["updated_at", "2015-08-07 17:29:08.243303"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 42], ["content", "RT @lefrenchgem: Steampunk Ring, Cat Jewelry, Vintage Style Silver, Cute, Fun Gift, Adjustable http://t.co/Q0EfcJj64X  #promomyshop #rtoe1"], ["url", "https://twitter.com/PromoteMyShop/status/629705752052133888"], ["created_at", "2015-08-07 17:29:08.247373"], ["updated_at", "2015-08-07 17:29:08.247373"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 737ms (Views: 0.1ms | ActiveRecord: 22.3ms)
+
+
+Started GET "/keywords/show?keyword=dog" for ::1 at 2015-08-07 10:29:10 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"dog"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "dog"], ["created_at", "2015-08-07 17:29:10.343690"], ["updated_at", "2015-08-07 17:29:10.343690"]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 43], ["content", "@superspurs34 so is my dog 😂"], ["url", "https://twitter.com/Reith_/status/629705767034200064"], ["created_at", "2015-08-07 17:29:11.401290"], ["updated_at", "2015-08-07 17:29:11.401290"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 43], ["content", "RT @getinthesea: GET IN THE FUCKING SEA, YOU HOWLING, FOUR-LEGGED WASTE OF SKIN AND HAIR. NOT THE DOG. http://t.co/sQiQLUOJiB"], ["url", "https://twitter.com/PabloDiablo86/status/629705766631555072"], ["created_at", "2015-08-07 17:29:11.404857"], ["updated_at", "2015-08-07 17:29:11.404857"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 43], ["content", "RT @CuteEmergency: DOG THAT'S LOST IT'S VOICE OMG I NEED HIM https://t.co/XAEnP77qVa"], ["url", "https://twitter.com/JuliaRichards18/status/629705766606368768"], ["created_at", "2015-08-07 17:29:11.408108"], ["updated_at", "2015-08-07 17:29:11.408108"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 43], ["content", "Someone kissed scout and gave her a lipstick stain! 😂 (someone else gave her a sausage!) happy dog! http://t.co/EyyVep1CFu"], ["url", "https://twitter.com/finestimaginary/status/629705764626649089"], ["created_at", "2015-08-07 17:29:11.411590"], ["updated_at", "2015-08-07 17:29:11.411590"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 43], ["content", "That's how I feel when I ride with my dog 🐶😂 https://t.co/lpG6uyxaG4"], ["url", "https://twitter.com/lifesofree_/status/629705764416962561"], ["created_at", "2015-08-07 17:29:11.415881"], ["updated_at", "2015-08-07 17:29:11.415881"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Completed 200 OK in 1085ms (Views: 0.1ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:29:27 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.5ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 200ms (Views: 196.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:29:27 -0700
+
+
+Started GET "/assets/keywords.self-0f8836e97a25532161a2b02c42008a49226110448ebccb2ef2edc5b9ea6d064b.js?body=1" for ::1 at 2015-08-07 10:29:27 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:29:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:29:27 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:29:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:29:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:29:27 -0700
+
+
+Started GET "/keywords/show?keyword=dog" for ::1 at 2015-08-07 10:29:30 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"dog"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "dog"], ["created_at", "2015-08-07 17:29:30.705025"], ["updated_at", "2015-08-07 17:29:30.705025"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 44], ["content", "#StraightOuttaCondoms ! A crazy motherfucker named Raw Dog !"], ["url", "https://twitter.com/R_H_U_E/status/629705856507072513"], ["created_at", "2015-08-07 17:29:31.553108"], ["updated_at", "2015-08-07 17:29:31.553108"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 44], ["content", "RT @BabyAnimalPics: A strong independent dog who don't need no man http://t.co/4ndEg6MjJz"], ["url", "https://twitter.com/WaunPaul/status/629705856347701248"], ["created_at", "2015-08-07 17:29:31.556946"], ["updated_at", "2015-08-07 17:29:31.556946"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 44], ["content", "RT @meg_mcdonald_: \"If you like drinking water that tastes like asparagus, you're probably a dog and that's probably a toilet\" 😂😂😂 #FallonT…"], ["url", "https://twitter.com/FotografiasSh/status/629705852547657728"], ["created_at", "2015-08-07 17:29:31.561139"], ["updated_at", "2015-08-07 17:29:31.561139"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 44], ["content", "for many people in los angeles \"life\" is what happens in the intervals between the 47 times you walk yr dog every day"], ["url", "https://twitter.com/BDavisCollins/status/629705852539285504"], ["created_at", "2015-08-07 17:29:31.565339"], ["updated_at", "2015-08-07 17:29:31.565339"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 44], ["content", "A dog hunting a rat... https://t.co/bCwKI08w1r"], ["url", "https://twitter.com/Harley1199/status/629705852337954816"], ["created_at", "2015-08-07 17:29:31.569659"], ["updated_at", "2015-08-07 17:29:31.569659"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 888ms (Views: 0.2ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:31:20 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.5ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 242ms (Views: 238.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:31:21 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (5.7ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 121ms (Views: 109.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:31:26 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.5ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 254ms (Views: 251.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:31:29 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 84.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:31:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:31:30 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:31:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:31:30 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:31:30 -0700
+
+
+Started GET "/assets/keywords.self-3b70c24c5d10de9d5e91a3f4981280f44791d79777619bde638c4b5d8f2ecfba.js?body=1" for ::1 at 2015-08-07 10:31:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:31:30 -0700
+
+
+Started GET "/keywords/show?keyword=dog" for ::1 at 2015-08-07 10:31:33 -0700
+Processing by KeywordsController#show as HTML
+  Parameters: {"keyword"=>"dog"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "dog"], ["created_at", "2015-08-07 17:31:33.210422"], ["updated_at", "2015-08-07 17:31:33.210422"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 45], ["content", "The fact that a dog just peed on my dad &gt;&gt;&gt;&gt;   😂😂😂😂😂"], ["url", "https://twitter.com/shorty1008/status/629706366605725696"], ["created_at", "2015-08-07 17:31:33.827364"], ["updated_at", "2015-08-07 17:31:33.827364"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 45], ["content", "hell yes I love my dog, &amp; jack d in my coke"], ["url", "https://twitter.com/kymosley_/status/629706366580621313"], ["created_at", "2015-08-07 17:31:33.840338"], ["updated_at", "2015-08-07 17:31:33.840338"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 45], ["content", "わんこかわゆす！　#dog #犬 #いぬ #わんこ #イヌ #ワンコ"], ["url", "https://twitter.com/yuki_nagato01/status/629706365313744896"], ["created_at", "2015-08-07 17:31:33.845191"], ["updated_at", "2015-08-07 17:31:33.845191"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 45], ["content", "RT @HealthyLiving: Why you should do yoga with your dog, and how to start http://t.co/BKMqXBJxUI http://t.co/R6QDVCruqt"], ["url", "https://twitter.com/OutdoorNation/status/629706364680544256"], ["created_at", "2015-08-07 17:31:33.849032"], ["updated_at", "2015-08-07 17:31:33.849032"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 45], ["content", "Finish my lunch break, head for front door, Toby pees on the floor in front of me MAKING EYE CONTACT. In unrelated news, free dog available!"], ["url", "https://twitter.com/mooncrazed/status/629706362847629312"], ["created_at", "2015-08-07 17:31:33.852625"], ["updated_at", "2015-08-07 17:31:33.852625"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 654ms (Views: 0.2ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:31:37 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 95.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:31:42 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.5ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 179ms (Views: 176.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:31:42 -0700
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:31:42 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:31:42 -0700
+
+
+Started GET "/assets/keywords.self-aff5dcdb7390c327175d70b2d49ad53bdf74f67c691fcd8c6178d875d2ff8019.js?body=1" for ::1 at 2015-08-07 10:31:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:31:42 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:31:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:31:42 -0700
+
+
+Started GET "/keywords/show?keyword=dog" for ::1 at 2015-08-07 10:31:45 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"dog"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "dog"], ["created_at", "2015-08-07 17:31:45.726232"], ["updated_at", "2015-08-07 17:31:45.726232"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 46], ["content", "@CortneyMayhew as a dog http://t.co/MlVmUh5oL7"], ["url", "https://twitter.com/ashleyelkiwan/status/629706419957161984"], ["created_at", "2015-08-07 17:31:46.254272"], ["updated_at", "2015-08-07 17:31:46.254272"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 46], ["content", "@Jared__Boyle aww who's dog?"], ["url", "https://twitter.com/jilliannn_14/status/629706418103390208"], ["created_at", "2015-08-07 17:31:46.257629"], ["updated_at", "2015-08-07 17:31:46.257629"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 46], ["content", "RT @LeoBlakeCarter: This dog thinks he's an ambulance 😂😂😂 http://t.co/QV8jmbb3KG"], ["url", "https://twitter.com/Mia_coleman_/status/629706417906171904"], ["created_at", "2015-08-07 17:31:46.262163"], ["updated_at", "2015-08-07 17:31:46.262163"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 46], ["content", "@Fred_da_dog rofbol - love it.... you's a cad pal - woofs you later #gunnersporch #partytime #tdif"], ["url", "https://twitter.com/Bestestgundog/status/629706417147105280"], ["created_at", "2015-08-07 17:31:46.266105"], ["updated_at", "2015-08-07 17:31:46.266105"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 46], ["content", "RT @Dory: My dog has made more of an impact in my life than most people have"], ["url", "https://twitter.com/Hannah1haley/status/629706416060628992"], ["created_at", "2015-08-07 17:31:46.273114"], ["updated_at", "2015-08-07 17:31:46.273114"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 559ms (Views: 0.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/keywords/show?keyword=novel" for ::1 at 2015-08-07 10:32:09 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"novel"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "novel"], ["created_at", "2015-08-07 17:32:09.111532"], ["updated_at", "2015-08-07 17:32:09.111532"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 47], ["content", "RT @mackbrownbooks: #FF @Jan_Marshall Long-time book cover designer, now a qualified proofreader too: @Super_Proofer. And also writing her …"], ["url", "https://twitter.com/chicksover50/status/629706511741263872"], ["created_at", "2015-08-07 17:32:10.274885"], ["updated_at", "2015-08-07 17:32:10.274885"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 47], ["content", "RT @coreycarter83: Highly rated #supernatural #thrillers by @Writing_Novel\n\n#99cents #IARTG \n\nhttp://t.co/T6VaR2h9GM http://t.co/qgXZ745s98"], ["url", "https://twitter.com/DiariesSurvivor/status/629706503373459457"], ["created_at", "2015-08-07 17:32:10.280179"], ["updated_at", "2015-08-07 17:32:10.280179"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 47], ["content", "[R-18]R.嘯く魔物と心中したい | em http://t.co/xZwCswl6Xz\n\n眠たすぎて見返せないので明日は起きたら確認しますおやすみなさい…(T . T)"], ["url", "https://twitter.com/em_etv/status/629706500999544832"], ["created_at", "2015-08-07 17:32:10.289532"], ["updated_at", "2015-08-07 17:32:10.289532"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 47], ["content", "Ojalá sacasen alguna visual novel de Akatsuki no yona, me la jugaría encantada. http://t.co/68fKpvN7vD"], ["url", "https://twitter.com/White_SoulWolf/status/629706480892121088"], ["created_at", "2015-08-07 17:32:10.296198"], ["updated_at", "2015-08-07 17:32:10.296198"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 47], ["content", "RT @authormaggiep: SALE! .99 on #Kindle 8/7-8: Award-winning SPIRITED AWAY - A #NOVEL OF THE STOLEN #IRISH \nhttp://t.co/iMjDW8pF7v\nPls #RT\n…"], ["url", "https://twitter.com/amanfewwords/status/629706474634248192"], ["created_at", "2015-08-07 17:32:10.301391"], ["updated_at", "2015-08-07 17:32:10.301391"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1210ms (Views: 0.2ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:32:13 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 10:32:13 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (0.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:32:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:32:13 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:32:13 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:32:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:32:13 -0700
+
+
+Started GET "/assets/keywords.self-aff5dcdb7390c327175d70b2d49ad53bdf74f67c691fcd8c6178d875d2ff8019.js?body=1" for ::1 at 2015-08-07 10:32:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:32:13 -0700
+
+
+Started GET "/" for ::1 at 2015-08-07 10:32:52 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.8ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 147ms (Views: 143.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-07 10:32:52 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-07 10:32:52 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-07 10:32:52 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-07 10:32:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-07 10:32:52 -0700
+
+
+Started GET "/assets/keywords.self-683014b3706edbc61f3783252488c8ba63d4d0bc6a3ad06643ef1a57a12d6131.js?body=1" for ::1 at 2015-08-07 10:32:52 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-07 10:32:52 -0700
+
+
+Started GET "/keywords/show?keyword=gato" for ::1 at 2015-08-07 10:32:59 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"gato"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "gato"], ["created_at", "2015-08-07 17:32:59.040371"], ["updated_at", "2015-08-07 17:32:59.040371"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 48], ["content", "@mario_vini17 oi gato? Prazer Isla. 🌚✋\u{1F3FB}"], ["url", "https://twitter.com/IslaGmrs/status/629706719728435201"], ["created_at", "2015-08-07 17:32:59.492413"], ["updated_at", "2015-08-07 17:32:59.492413"]]
+  [1m[35m (9.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 48], ["content", "@MaartinezSanti Hablame al wsp gato"], ["url", "https://twitter.com/AgustinFredes2/status/629706711922790400"], ["created_at", "2015-08-07 17:32:59.504943"], ["updated_at", "2015-08-07 17:32:59.504943"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 48], ["content", "RT @Macundra: La Creación Mas Espectacular: El Gato Burguer http://t.co/lcnm6V0jhh"], ["url", "https://twitter.com/LenaLojo2/status/629706708147945472"], ["created_at", "2015-08-07 17:32:59.509127"], ["updated_at", "2015-08-07 17:32:59.509127"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 48], ["content", "Ajjajajajaja le mande msj al pacheco bardiando al bostero gato ese"], ["url", "https://twitter.com/Nachoo_ispizuaa/status/629706705878806528"], ["created_at", "2015-08-07 17:32:59.514032"], ["updated_at", "2015-08-07 17:32:59.514032"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 48], ["content", "RT @ElNuevoDia: Seis enseñanzas que puedes aprender de tu gato para disfrutar la vida http://t.co/kToW17EAbz http://t.co/1gZkrmRr2o"], ["url", "https://twitter.com/CentenoLiliana/status/629706704515534848"], ["created_at", "2015-08-07 17:32:59.517983"], ["updated_at", "2015-08-07 17:32:59.517983"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 490ms (Views: 0.4ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/keywords/show?keyword=pero" for ::1 at 2015-08-07 10:33:01 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"pero"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "pero"], ["created_at", "2015-08-07 17:33:01.594381"], ["updated_at", "2015-08-07 17:33:01.594381"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 49], ["content", "@D_Dani_ella pero en primera fila!! :-D"], ["url", "https://twitter.com/DanskDnl/status/629706736350310400"], ["created_at", "2015-08-07 17:33:01.944304"], ["updated_at", "2015-08-07 17:33:01.944304"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 49], ["content", "RT @WillyrexYT: Buenas! Llevo un par de días más callado por aqui pero es que estoy preparando cosillas ^^ Marcho a dormir prontito :)"], ["url", "https://twitter.com/WigettaHarmony/status/629706735985410050"], ["created_at", "2015-08-07 17:33:01.947578"], ["updated_at", "2015-08-07 17:33:01.947578"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 49], ["content", "@YoNoCreoEnLos  #sorry pero me das asco DANIEL &gt;:("], ["url", "https://twitter.com/SassyCouchSpud/status/629706735553486849"], ["created_at", "2015-08-07 17:33:01.950610"], ["updated_at", "2015-08-07 17:33:01.950610"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 49], ["content", "RT @demasiadohueca: Vieron cuando queres algo y cuando lo tenés no lo queres más? Bueno yo lo aplico en las personas, si re pelotuda pero e…"], ["url", "https://twitter.com/Danna_lD/status/629706735452848128"], ["created_at", "2015-08-07 17:33:01.953368"], ["updated_at", "2015-08-07 17:33:01.953368"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 49], ["content", "@pomodoririn the need is real pero lahat yata dito sa manga reader nabasa ko na huhu 💔 itutulog ko nalang 😂 good night 💕"], ["url", "https://twitter.com/_ohmylittlegirl/status/629706735381446657"], ["created_at", "2015-08-07 17:33:01.957100"], ["updated_at", "2015-08-07 17:33:01.957100"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Completed 200 OK in 375ms (Views: 0.1ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/keywords/show?keyword=library" for ::1 at 2015-08-07 11:04:02 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"library"}
+  [1m[36m (1.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "library"], ["created_at", "2015-08-07 18:04:02.247371"], ["updated_at", "2015-08-07 18:04:02.247371"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 50], ["content", "Libros | PJ Library | PJ Library http://t.co/iRlzPWxf4J"], ["url", "https://twitter.com/childrensbook/status/629714540633161728"], ["created_at", "2015-08-07 18:04:03.513962"], ["updated_at", "2015-08-07 18:04:03.513962"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 50], ["content", "Did you read about the GOP debate, Dr. Dre, and the Obama ... - http://t.co/wozrskhB4A | Zen Events Group http://t.co/UbV6s3y2A9"], ["url", "https://twitter.com/djskittles2009/status/629714530763829248"], ["created_at", "2015-08-07 18:04:03.519352"], ["updated_at", "2015-08-07 18:04:03.519352"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 50], ["content", "Bob Higgs: War is the Master Key of the State http://t.co/jykw89paHW"], ["url", "https://twitter.com/EndTaxation/status/629714526687109120"], ["created_at", "2015-08-07 18:04:03.526050"], ["updated_at", "2015-08-07 18:04:03.526050"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 50], ["content", "If librarians were honest http://t.co/s26F6yQ7iJ #biblioteca"], ["url", "https://twitter.com/CNBMex/status/629714492302036993"], ["created_at", "2015-08-07 18:04:03.531293"], ["updated_at", "2015-08-07 18:04:03.531293"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 50], ["content", "RT @Pundit_AcadEMIC: When you go to reserve a book from the library &amp; some other mfer got it http://t.co/4gU3C4KdkR"], ["url", "https://twitter.com/LifesizeJasz/status/629714460836536320"], ["created_at", "2015-08-07 18:04:03.537470"], ["updated_at", "2015-08-07 18:04:03.537470"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 1324ms (Views: 0.8ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/keywords/show?keyword=tacos" for ::1 at 2015-08-07 11:04:07 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"tacos"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "tacos"], ["created_at", "2015-08-07 18:04:07.984715"], ["updated_at", "2015-08-07 18:04:07.984715"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 51], ["content", "I just had THE BEST TACOS EVER!!!"], ["url", "https://twitter.com/angelrangel1011/status/629714558676897792"], ["created_at", "2015-08-07 18:04:08.544950"], ["updated_at", "2015-08-07 18:04:08.544950"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 51], ["content", "RT @saffy_taylor: hollyyy shiitttt what is this wtf luke #MTVHottest 5SOS 💥 https://t.co/sCDr0dHcsc"], ["url", "https://twitter.com/justinft_tacos/status/629714554121949184"], ["created_at", "2015-08-07 18:04:08.549317"], ["updated_at", "2015-08-07 18:04:08.549317"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 51], ["content", "ALL YOU CAN EAT TACOS GRILLED FRESH ON THE PATIO!! PLUS NFL RETURNS SOON! http://t.co/ZMC6U9ZDxw http://t.co/Rb3DSPpQJy"], ["url", "https://twitter.com/Ciscoswestlake/status/629714550527524864"], ["created_at", "2015-08-07 18:04:08.552747"], ["updated_at", "2015-08-07 18:04:08.552747"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 51], ["content", "ALL YOU CAN EAT TACOS GRILLED FRESH ON THE PATIO!! PLUS NFL RETURNS SOON! http://t.co/nx665EDC4h"], ["url", "https://twitter.com/CiscosFood/status/629714546417082368"], ["created_at", "2015-08-07 18:04:08.556033"], ["updated_at", "2015-08-07 18:04:08.556033"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 51], ["content", "RT @maddhacks: my 8 y/o brother said if he was president he'd make ppl eat tacos every single day wow amazing he'd make a better pres than …"], ["url", "https://twitter.com/CharleneD74g0nz/status/629714544969920512"], ["created_at", "2015-08-07 18:04:08.560853"], ["updated_at", "2015-08-07 18:04:08.560853"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Completed 200 OK in 589ms (Views: 0.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/keywords/show?keyword=lending+club" for ::1 at 2015-08-07 11:04:31 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"lending club"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)  [["content", "lending club"], ["created_at", "2015-08-07 18:04:31.022720"], ["updated_at", "2015-08-07 18:04:31.022720"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 52], ["content", "Lending Club CEO Sees Opportunity in Mortgage Morass http://t.co/PD7zFud3JI"], ["url", "https://twitter.com/mkovarski/status/629713037210046464"], ["created_at", "2015-08-07 18:04:31.684692"], ["updated_at", "2015-08-07 18:04:31.684692"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 52], ["content", "Lending Club Available Loans Tracker - Total: 358 New: 160 at 10:01. Review loans at http://t.co/jxCUgJ0pQt"], ["url", "https://twitter.com/PeerCube/status/629698789960388608"], ["created_at", "2015-08-07 18:04:31.696373"], ["updated_at", "2015-08-07 18:04:31.696373"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 52], ["content", "Lending Club: still growing: http://t.co/dnrdNRuJtf #FT"], ["url", "https://twitter.com/tuestadavid/status/629697273828614144"], ["created_at", "2015-08-07 18:04:31.700371"], ["updated_at", "2015-08-07 18:04:31.700371"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 52], ["content", "Lending Club Reports Growth in Revenues, Originations for Q2 2015 http://t.co/x0YGlQIcZ1"], ["url", "https://twitter.com/PierreGaleon/status/629689204591730688"], ["created_at", "2015-08-07 18:04:31.703919"], ["updated_at", "2015-08-07 18:04:31.703919"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 52], ["content", "Active Trending Stocks: Lending Club Corp (LC), FedEx Corporation (FDX) Tear Lab Corp (TEAR)\nhttp://t.co/N4Lkyr16wH http://t.co/LfrQUL1jfv"], ["url", "https://twitter.com/thestreettimes/status/629685055653216256"], ["created_at", "2015-08-07 18:04:31.706884"], ["updated_at", "2015-08-07 18:04:31.706884"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 764ms (Views: 0.1ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 18:52:10 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (5.3ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 464ms (Views: 355.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2015-08-07 18:52:14 -0700
+Processing by KeywordsController#index as HTML
+  [1m[35mKeyword Load (0.3ms)[0m  SELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10
+  Rendered keywords/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 318ms (Views: 307.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/apple-touch-icon-precomposed.png" for ::1 at 2015-08-07 18:52:15 -0700
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-precomposed.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (149.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (71.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (159.5ms)
+
+
+Started GET "/apple-touch-icon.png" for ::1 at 2015-08-07 18:52:15 -0700
+
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon.png"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (2.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (81.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (157.4ms)
+
+
+Started GET "/" for ::1 at 2015-08-11 14:43:43 -0700
+Processing by KeywordsController#index as HTML
+  [1m[36mKeyword Load (4.2ms)[0m  [1mSELECT  "keywords".* FROM "keywords"  ORDER BY "keywords"."id" DESC LIMIT 10[0m
+  Rendered keywords/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 173ms (Views: 144.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/keywords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-08-11 14:43:44 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-08-11 14:43:44 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-08-11 14:43:44 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-08-11 14:43:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-08-11 14:43:44 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-08-11 14:43:44 -0700
+
+
+Started GET "/assets/keywords.self-683014b3706edbc61f3783252488c8ba63d4d0bc6a3ad06643ef1a57a12d6131.js?body=1" for ::1 at 2015-08-11 14:43:44 -0700
+
+
+Started GET "/keywords/show?keyword=cats" for ::1 at 2015-08-11 14:43:48 -0700
+Processing by KeywordsController#show as JSON
+  Parameters: {"keyword"=>"cats"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "keywords" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "cats"], ["created_at", "2015-08-11 21:43:48.093786"], ["updated_at", "2015-08-11 21:43:48.093786"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 53], ["content", "RT @TeamGatito: ★ＲＥＴＷＥＥＴ\n\n★ＩＦ\n\n★ＹＯＵ\n\n★FOLLOWBACK\n\n#F4F\n#TFB_Cats\n#TEAMGATITO\n\n#ＦＯＬＬＯＷ @EvilsReason"], ["url", "https://twitter.com/Firesprayxl/status/631219384841826304"], ["created_at", "2015-08-11 21:43:48.781223"], ["updated_at", "2015-08-11 21:43:48.781223"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 53], ["content", "@BardlyWorking come on, let's go to bed, it's even more comfortable than here. We can take the cats too"], ["url", "https://twitter.com/MarlovianSass/status/631219384669880320"], ["created_at", "2015-08-11 21:43:48.786414"], ["updated_at", "2015-08-11 21:43:48.786414"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 53], ["content", "Because you know, the cats in the street more than me. http://t.co/njtqFczjN9"], ["url", "https://twitter.com/xoSaraxoo/status/631219383357059072"], ["created_at", "2015-08-11 21:43:48.790746"], ["updated_at", "2015-08-11 21:43:48.790746"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["keyword_id", 53], ["content", "guess i need to start collecting cats then"], ["url", "https://twitter.com/adshimck/status/631219380374913024"], ["created_at", "2015-08-11 21:43:48.796227"], ["updated_at", "2015-08-11 21:43:48.796227"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tweets" ("keyword_id", "content", "url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["keyword_id", 53], ["content", "Does a man equal parts @KeithHabs @korndiddy @EugeneLeeYang &amp; @nedacus exist? Will settle for cats, Oreos &amp; @BuzzFeed for now, I suppose."], ["url", "https://twitter.com/watchthelamb/status/631219379439554560"], ["created_at", "2015-08-11 21:43:48.801720"], ["updated_at", "2015-08-11 21:43:48.801720"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 724ms (Views: 0.3ms | ActiveRecord: 9.3ms)
