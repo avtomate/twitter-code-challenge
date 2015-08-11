@@ -6,6 +6,7 @@
 $(document).ready(function(){
   findTweets();
   keywordRetrieve();
+  //updateLastTen();
 })
 
 function findTweets(){
@@ -43,6 +44,9 @@ function keywordRetrieve(){
       data: data,
       dataType: 'JSON'
     }).done(function(response){
+      if ( $('#tweet-holder a').length > 0 || $('#tweet-holder br').length > 0 ) {
+        $("#tweet-holder").html("");
+      }
       for(var i=0; i < response.tweets.length; i++) {
         $('#tweet-holder').append("<br>" + (i+1) + ". " + response.tweets[i].content + "<br>")
       }
